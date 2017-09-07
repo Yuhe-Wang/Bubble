@@ -1,0 +1,296 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\VisualBubbles.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VisualBubbles.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PANEL DIALOGEX 0, 0, 127, 369
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Next",IDC_NEXT,62,59,51,22
+    PUSHBUTTON      "Animate",IDC_ANIMATE,24,83,63,22
+    LTEXT           "Current step",IDC_STATIC,7,15,52,11
+    LTEXT           "Bubble Number",IDC_STATIC,6,29,54,11
+    LTEXT           "Page Index",IDC_STATIC,7,44,54,11
+    CTEXT           "",IDC_N_STEP,68,15,52,11,WS_BORDER
+    CTEXT           "",IDC_N_BUBBLE,67,28,52,11,WS_BORDER
+    CTEXT           "",IDC_N_PAGE,67,42,52,11,WS_BORDER
+    CONTROL         "",IDC_SLIDER_SPEED,"msctls_trackbar32",TBS_AUTOTICKS | WS_TABSTOP,7,112,109,18
+    LTEXT           "0.1s",IDC_STATIC,8,133,17,11
+    LTEXT           "1s",IDC_STATIC,59,134,12,11
+    LTEXT           "10s",IDC_STATIC,102,131,12,11
+    PUSHBUTTON      "Previous",IDC_PREVIOUS,6,59,47,22
+    PUSHBUTTON      "Switch View",IDC_SWITCH_VIEW,28,147,63,22
+    CONTROL         "Same Coordinates",IDC_CHECK_SAME_COORDINATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,190,80,15
+    LTEXT           "dR:",IDC_STATIC,8,213,19,11
+    EDITTEXT        IDC_EDIT_DR,26,210,48,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_BUTTON_SET_DR,79,208,34,16
+    GROUPBOX        "statistic",IDC_STATIC,3,176,116,162
+    EDITTEXT        IDC_EDIT_TIME_MIN,4,282,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TIME_MAX,41,282,29,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_BUTTON_SET_TIME_RANGE,79,281,34,16
+    LTEXT           "Range of time axis",IDC_STATIC,6,268,80,11
+    LTEXT           "~",IDC_STATIC,32,285,8,8
+    CONTROL         "Auto scale range of r",IDC_CHECK_AUTO_R,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,231,103,15
+    LTEXT           "Or max_r=",IDC_STATIC,5,251,42,11
+    EDITTEXT        IDC_EDIT_MAX_R,42,248,31,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Apply",IDC_BUTTON_SET_MAX_R,79,246,34,16
+    CONTROL         "linear",IDC_RADIO_LINEAR,"Button",BS_AUTORADIOBUTTON,40,300,41,12
+    CONTROL         "log",IDC_RADIO_LOG,"Button",BS_AUTORADIOBUTTON,85,299,26,12
+    LTEXT           "f axis",IDC_STATIC,4,300,30,11
+    CONTROL         "show f as probability",IDC_CHECK_F_PROBABILITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,318,96,13
+    CONTROL         "show fitting curve",IDC_CHECK_SHOW_FITTING,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,341,86,13
+END
+
+IDD_SPLASH_SCREEN DIALOGEX 0, 0, 400, 141
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP,0,0,400,71
+    ICON            IDR_MAINFRAME,IDC_STATIC,18,84,16,14
+    LTEXT           "VisualBubbles, Version 1.0",IDC_STATIC,41,81,100,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,44,91,100,8
+    CONTROL         "",IDC_PROGRESS_LOADING,"msctls_progress32",PBS_SMOOTH | WS_BORDER,18,125,355,14
+    LTEXT           "LOADING DATA, PLEASE WAIT...",IDC_STATIC,128,112,133,8
+    LTEXT           "by YUHE WANG   in the physics department of WUSTL",IDC_STATIC,183,82,181,8
+    LTEXT           "email: yuhe.wang@go.wustl.edu",IDC_STATIC,183,92,181,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_PANEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 363
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\WU_PHY_LOGO.bmp"
+IDB_LOADING             BITMAP                  "res\\Loading.bmp"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(美国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About VisualBubbles"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "VisualBubbles, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2013",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_VISUALBUBBLES_DIALOG DIALOGEX 0, 0, 633, 344
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "Visualize Bubbles     by Yuhe Wang in WUSTL"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",ID_GL_DRAW,"Static",SS_BLACKFRAME,7,7,486,330
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_VISUALBUBBLES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 626
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 337
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "WUSTL PHYSICS"
+            VALUE "FileDescription", "Bubbles Collision Visualizer"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VisualBubbles.exe"
+            VALUE "LegalCopyright", "WUSTL PHYSICS.  All rights reserved."
+            VALUE "OriginalFilename", "VisualBubbles.exe"
+            VALUE "ProductName", "VisualBubbles"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About VisualBubbles..."
+END
+
+#endif    // 英语(美国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\VisualBubbles.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
