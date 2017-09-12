@@ -3,4 +3,4 @@ The project bubble is a tool that simulates that the coagulation process of esca
 ![Bubble](Bubble.png)
 
 # Papers
-- [Coagulation Process of Escaping Bubbles and Parallel Simulation](bubble.pdf)
+- [Coagulation Process of Escaping Bubbles and Parallel Simulation](Bubble.pdf)
